@@ -53,20 +53,10 @@ namespace JumpKing_CustomMap_i18n
 
         public static bool NewSetSettingsData()
         {
+            // see: https://partner.steamgames.com/doc/store/localization/languages
+
             string text = "gui\\location_settings";
             string langString = SteamApps.GetCurrentGameLanguage();
-
-            // see: https://partner.steamgames.com/doc/store/localization/languages
-            // english,
-            // SimplifiedChinese,
-            // BrazilianPortugese,
-            // French,
-            // Russian,
-            // German,
-            // Spanish,
-            // TraditionalChinese,
-            // koreana,
-            // japanese
 
             try
             {
