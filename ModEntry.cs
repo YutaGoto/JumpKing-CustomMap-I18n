@@ -2,9 +2,7 @@
 using JumpKing.MiscSystems.LocationText;
 using JumpKing;
 using JumpKing.Mods;
-using System.Diagnostics;
 using System;
-using System.Reflection;
 using Steamworks;
 
 namespace JumpKing_CustomMap_i18n
@@ -21,7 +19,9 @@ namespace JumpKing_CustomMap_i18n
         [BeforeLevelLoad]
         public static void BeforeLevelLoad()
         {
-            // Debugger.Launch();
+#if DEBUG
+            Debugger.Launch();
+#endif
         }
 
         /// <summary>
